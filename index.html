@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        :root {
+            background: #080814;
+            color: #eef0ff;
+            font-family: Inter, system-ui, sans-serif;
+            line-height: 1.65;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: radial-gradient(circle at top, rgba(94, 41, 255, 0.25), transparent 28%),
+                        linear-gradient(180deg, #090911 0%, #0f0f24 40%, #08080e 100%);
+        }
+
+        header,
+        footer {
+            text-align: center;
+            padding: 2rem 1.25rem;
+        }
+
+        header {
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        footer {
+            border-top: 1px solid rgba(255,255,255,0.08);
+            font-size: 0.95rem;
+            opacity: 0.78;
+        }
+
+        main {
+            width: min(1120px, calc(100% - 2rem));
+            margin: 0 auto;
+            padding: 2rem 0 3rem;
+            display: grid;
+            gap: 1.75rem;
+        }
+
+        .hero {
+            padding: 2rem;
+            background: rgba(23, 11, 60, 0.7);
+            border: 1px solid rgba(136, 78, 255, 0.2);
+            border-radius: 28px;
+            box-shadow: 0 28px 70px rgba(0, 0, 0, 0.22);
+        }
+
+        .hero h1 {
+            margin: 0 0 0.9rem;
+            font-size: clamp(2.8rem, 4vw, 4.1rem);
+            letter-spacing: -0.06em;
+        }
+
+        .hero p {
+            margin: 0;
+            max-width: 48rem;
+            font-size: 1.12rem;
+            color: #d9d9ff;
+        }
+
+        .grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .card {
+            padding: 1.75rem;
+            border-radius: 24px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+            backdrop-filter: blur(12px);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: #c9a7ff;
+        }
+
+        .card p,
+        .card ul {
+            margin: 0.9rem 0 0;
+            color: #e9e9ff;
+            font-size: 1rem;
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            gap: 0.85rem;
+        }
+
+        .pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.55rem;
+            padding: 0.65rem 0.95rem;
+            border-radius: 999px;
+            background: rgba(103, 47, 255, 0.12);
+            color: #e6e0ff;
+            border: 1px solid rgba(138, 79, 255, 0.18);
+            font-size: 0.95rem;
+        }
+
+        .favorite {
+            color: indigo;
+            font-weight: 700;
+        }
+
+        .subtle {
+            color: #b3b5dd;
+        }
+
+        @media (min-width: 760px) {
+            .grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+        <p class="subtle">I enjoy games, sports, friends, digital art, and the small thrill of internet horror.</p>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Hey there — I'm someone who loves connection and play.</h1>
+            <p>Whether it is competing in a match, hanging out with friends, or teaming up online, I enjoy having someone to talk to or play with. My favorite color is <span class="favorite">indigo</span>, I love chicken, and I enjoy a little bit of digital art with a touch of internet horror.</p>
+        </section>
+
+        <section class="grid">
+            <article class="card">
+                <h2>Games & Friends</h2>
+                <ul>
+                    <li class="pill">Playing video games with friends</li>
+                    <li class="pill">Laughing and sharing stories</li>
+                    <li class="pill">Trying new games together</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h2>Sports</h2>
+                <p>I love playing sports with friends because it keeps me active and gives us something exciting to do as a team.</p>
+            </article>
+
+            <article class="card">
+                <h2>Favorites</h2>
+                <p>My favorite color is <span class="favorite">indigo</span> and my favorite food is <strong>chicken</strong>. These are my go-to choices when I want something that feels bold and comforting.</p>
+            </article>
+
+            <article class="card">
+                <h2>Creative Side</h2>
+                <p>Digital art gives me a space to experiment with mood and style. I also enjoy the spooky atmosphere of internet horror stories in small doses.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Indigo energy, good food, and fun moments with friends.</p>
+    </footer>
+</body>
+</html>
